@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+</head>
+<body>
+    <h1>Create User</h1>
+
+    <hr>
+
+    <form>
+       <label>Email:</label> 
+       <input type = "text" id = "email" name = "email" placeholder="email" required><br />
+
+       <label>Username:</label>
+       <input type = "text" id = "Username" name = "Username" placeholder="Username" required size="30" maxlength="12" ><br />
+
+       <label>Password:</label>
+       <input name = "password" type="password" id="password" size="30" maxlength="8" placeholder="Password" required><br />
+
+       <label>Bio:</label><br />
+       <textarea input name="Bio" type="textbox" placeholder="Give a brief description of this user" id="bio" ></textarea><br/>
+
+       <fieldset>
+           <legend>Intersets</legend>
+        <label>Select Your favourite superhero</label>
+        <input type="radio" name="Superman" value="Superman">
+        <label for="Superman">Superman</label>
+
+        <input type="radio" name="Batman" value="Batman">
+        <label for="Batman"> Batman</label>
+
+        <input type="radio" name="Wonder Woman" value="Wonder Woman">
+        <label for="Wonder Woman"> Wonder Woman</label>
+
+        <input type="radio" name="Flash" value="Flash">
+        <label for="Flash"> Flash</label>
+
+        <input type="radio" name="Thor" value="Thor">
+        <label for="Thor">Thor</label>
+
+        <input type="radio" name="Hulk" value="Hulk">
+        <label for="Hulk">Hulk</label><br />
+
+        <label>Select your fav video game</label>
+        <input type="checkbox" name="Fifa" value="Fifa" checked>
+        <label>Fifa</label>
+
+        <input type="checkbox" name="NHL" value="NHL">
+        <label>NHL</label>
+
+        <input type="checkbox" name="Resident Evil" value="Resident Evil">
+        <label>Resident Evil</label>
+
+        <input type="checkbox" name="Uncharted" value="Uncharted" checked>
+        <label>Uncharted</label>
+    </legend>
+
+    </fieldset>
+
+    <input hidden name="userid" value="2300">
+    <button>Create user</button>
+
+    </form>
+</body>
+</html>
