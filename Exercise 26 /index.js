@@ -27,12 +27,35 @@ let evenNumber = function even() {
 
 evenNumber();
 
-let fibnacci = function feb() {
-    for(let i = 0; i<=10; i++) {
-        let a = i;
-        let b= a+i;
-        console.log(b);
+let fibnacci = function (number){
+    if (isNaN(number)) {
+        console.log("invalid");
+        return -1;
     }
-}
+    let convertnum = +number;
+    if (convertnum < 0) {
+        console.log("error");
+        return -1;
+    }
+    if(convertnum == 1){
+        return 0;
+    }
 
-fibnacci();
+    if(convertnum == 2){
+        return 1;
+    }
+
+    var x,y,z;
+
+   for (var i=2;i<=number;i++){
+    z = x+y;
+    x=y;
+    y=z;
+
+    return z;
+   }
+    
+  
+};
+
+console.log(fibnacci(4));
